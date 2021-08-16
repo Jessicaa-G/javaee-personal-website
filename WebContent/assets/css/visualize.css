@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+
+
+.thumbnails {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	position: relative;
+	margin: 0 0 2em -2em;
+}
+
+.thumbnails a {
+	color: maroon;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 13pt;
+	font-weight: 200;
+	line-height: 1.65;
+	text-decoration: none;
+	-moz-transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	border-bottom: none;
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+	background-color: rgba(255, 255, 255, 0.075);
+	cursor: pointer;
+	outline: 0;
+	overflow: hidden;
+}
+
+.thumbnails a img {
+	display: block;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.thumbnails a h3 {
+	margin: 1em;
+	font: inherit;
+}
+
+.thumbnails a:hover {
+	color: rosybrown;
+	background-color: rgba(255, 255, 255, 0.25);
+	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+}
+
+.thumbnails>div {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: calc(100% / 3);
+	padding-left: 2em;
+}
+
+.thumbnails>div> :last-child {
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+	.thumbnails {
+		margin: 0 0 2em -1.5em;
+	}
+
+	.thumbnails a {
+		margin: 0 0 1.5em 0;
+	}
+
+	.thumbnails>div {
+		padding-left: 1.5em;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+	.thumbnails h3 {
+		font-size: 0.8em;
+		color: #ffffff;
+		font-weight: 200;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.thumbnails {
+		display: block;
+	}
+
+	.thumbnails a {
+		margin: 0 0 2em 0 !important;
+	}
+
+	.thumbnails>div {
+		display: block;
+		width: 100%;
+	}
+
+	.thumbnails>div:last-child> :last-child {
+		margin-bottom: 0 !important;
+	}
+
+	.thumbnails h3 {
+		font-size: 1em;
+	}
+
+}
+
+/* Wrapper */
+
+#wrapper {
+	max-width: 68em;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2em;
+	opacity: 1;
+	filter: none;
+	-moz-transition: opacity 1s ease, -moz-filter 1s ease;
+	-webkit-transition: opacity 1s ease, -webkit-filter 1s ease;
+	-ms-transition: opacity 1s ease, -ms-filter 1s ease;
+	transition: opacity 1s ease, filter 1s ease;
+}
+
+body.is-loading #wrapper {
+	opacity: 0;
+	-moz-filter: blur(1px);
+	-webkit-filter: blur(1px);
+	-ms-filter: blur(1px);
+	filter: blur(1px);
+}
+
+body.is-covered #wrapper {
+	-moz-filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
+
+/* Poptrox */
+
+.poptrox-popup {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 0.5em 3em 0 rgba(0, 0, 0, 0.25);
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.poptrox-popup .closer {
+	-moz-transition: opacity 0.2s ease-in-out;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+	text-decoration: none;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	z-index: 2;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	white-space: nowrap;
+	text-indent: 2.5em;
+	overflow: hidden;
+	width: 2.5em;
+	height: 2.5em;
+	display: block;
+}
+
+.poptrox-popup .closer:before {
+	content: "";
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+.poptrox-popup .closer:before {
+	display: block;
+	position: relative;
+	text-indent: 0;
+	border-radius: 100%;
+	box-shadow: inset 0 0 0 1px #ffffff;
+	color: #ffffff !important;
+	width: 2.5em;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+.poptrox-popup:hover .closer {
+	opacity: 0.5;
+}
+
+.poptrox-popup:hover .closer:hover {
+	opacity: 1.0;
+}

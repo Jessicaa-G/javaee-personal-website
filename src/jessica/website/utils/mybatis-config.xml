@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC" />
+            <!-- 配置数据库连接信息 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+                <property name="url" value="jdbc:sqlserver://localhost:1433;DataBaseName=Website" />
+                  <property name="username" value="Jessica" />
+                <property name="password" value="123456" />
+                 <!--<property name="username" value="sa" />
+                <property name="password" value="Jessica325" /> -->
+            </dataSource>
+        </environment>
+    </environments>
+    
+    <mappers>
+        <!-- 注册xml文件-->
+        <mapper resource="jessica/website/dao/UserDao.xml"/>
+        <mapper resource="jessica/website/dao/FoodDao.xml"/>
+        <mapper resource="jessica/website/dao/CustomDao.xml"/>
+        <mapper resource="jessica/website/dao/SkillDao.xml"/>
+        <mapper resource="jessica/website/dao/AwardDao.xml"/>
+        <mapper resource="jessica/website/dao/MessageDao.xml"/>
+        <mapper resource="jessica/website/dao/MessageReplyDao.xml"/>
+    </mappers>
+</configuration>

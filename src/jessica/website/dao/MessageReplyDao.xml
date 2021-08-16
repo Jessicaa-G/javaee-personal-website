@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.MessageReplyDao">
+	<!-- 根据m_id查询回复 -->
+	<select id="selectReplyById" parameterType="int"
+		resultType="jessica.website.bean.MessageReply">
+		select * from message_reply where m_id = #{m_id}
+	</select>
+	<!-- 添加回复 -->
+	<insert id="addReply" parameterType="jessica.website.dao.MessageReplyDao">
+		insert into message_reply (m_id,mre_content,mre_time) values(#{m_id},#{mre_content},#{mre_time})
+	</insert>
+	<!-- 由m_id删除回复 -->
+	<delete id="deleteReply" parameterType="int">
+		delete from message_reply where m_id = #{m_id}
+	</delete>
+	<!-- 由m_id修改回复-->
+	<update id="updateReply" parameterType="jessica.website.dao.MessageReplyDao">
+		update message_reply set m_id = #{m_id},mre_content = #{mre_content},mre_time = #{mre_time} where m_id = #{m_id}
+	</update>
+</mapper>

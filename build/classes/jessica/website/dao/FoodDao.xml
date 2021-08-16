@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.FoodDao">
+	<!-- 根据foodname查询一个美食信息 -->
+	<select id="selectFoodByName" parameterType="String"
+		resultType="jessica.website.bean.Food">
+		select * from ht_food where food_name = #{food_name}
+	</select>
+	<!-- 查询所有美食信息 -->
+	<select id="selectAllFood" resultType="jessica.website.bean.Food">
+		select * from ht_food
+	</select>
+	<!-- 添加一个美食 -->
+	<insert id="addFood" parameterType="jessica.website.bean.Food">
+		insert into ht_food (food_name,food_content,food_pic_path) values(#{food_name},#{food_content},#{food_pic_path})
+	</insert>
+	<!-- 修改一个美食介绍 -->
+	<update id="updateFood" parameterType="jessica.website.bean.Food">
+		update ht_food set food_content = #{food_content} where food_name = #{food_name}
+	</update>
+	<!-- 删除一个美食 -->
+	<delete id="deleteFood" parameterType="String">
+		delete from ht_food where food_name = #{food_name}
+	</delete>
+</mapper>

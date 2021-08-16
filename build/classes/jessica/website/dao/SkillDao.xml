@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.SkillDao">
+	<!-- 查询一个技能 -->
+	<select id="selectSkillByName" parameterType="String" resultType="jessica.website.bean.Skill">
+		select * from self_skill where skill_name = #{skill_name}
+	</select>
+	<!-- 查询所有技能 -->
+	<select id="selectAllSkill" resultType="jessica.website.bean.Skill">
+		select * from self_skill
+	</select>
+	<!-- 添加一个技能 -->
+	<insert id="addSkill" parameterType="jessica.website.bean.Skill">
+		insert into self_skill (skill_name,skill_proficiency) values(#{skill_name},#{skill_proficiency})
+	</insert>
+	<!-- 修改一个技能 -->
+	<update id="updateSkill" parameterType="jessica.website.bean.Skill">
+		update self_skill set skill_name = #{skill_name},skill_proficiency = #{skill_proficiency} where skill_name = #{skill_name}
+	</update>
+	<!-- 删除一个技能 --> 
+	<delete id="deleteSkill" parameterType="String">
+		delete from self_skill where skill_name = #{skill_name}
+	</delete>
+</mapper>
+

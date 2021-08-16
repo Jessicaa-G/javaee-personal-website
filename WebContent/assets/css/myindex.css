@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kaushan+Script");
+
+.picbox{
+	margin:0 auto;
+	width:80%;
+	flex-shrink: 0;
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+
+.picture{
+	width: 204px;
+	height: 250px;
+	background-color: #fff;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom: 25px;
+}
+
+.picture img{
+	height: 170px;
+	width:170px;
+}
+
+.pictureinfo{
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.word{
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+.like{
+	width: 40px;
+	background: url(../images/blank.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.subtitle {
+	font-family: FontAwesome;
+	font-size: 20px;
+}
+
+.profession {
+	padding-top: 50px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	/* font-family: "comic sans ms" */
+	font-family: FontAwesome;
+}

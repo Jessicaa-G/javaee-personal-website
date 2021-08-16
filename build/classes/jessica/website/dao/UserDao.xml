@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.UserDao">
+	<!-- 根据username查询一个用户信息 -->
+	<select id="selectUserByName" parameterType="String"
+		resultType="jessica.website.bean.User">
+		select * from myuser where username = #{username}
+	</select>
+	<!-- 查询所有用户信息 -->
+	<select id="selectAllUser" resultType="jessica.website.bean.User">
+		select * from myuser
+	</select>
+	<!-- 添加一个用户 ，#{userName}为com.mybatis.po.User的属性值 -->
+	<insert id="addUser" parameterType="jessica.website.bean.User">
+		insert into myuser (username,password) values(#{username},#{password})
+	</insert>
+	<!-- 修改一个用户 -->
+	<update id="updateUser" parameterType="jessica.website.bean.User">
+		update myuser set username = #{username},password = #{password} where username = #{username}
+	</update>
+	<!-- 删除一个用户 -->
+	<delete id="deleteUser" parameterType="String">
+		delete from myuser where username = #{username}
+	</delete>
+</mapper>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.CustomDao">
+	<!-- 根据customname查询一个美食信息 -->
+	<select id="selectCustomByName" parameterType="String"
+		resultType="jessica.website.bean.Custom">
+		select * from ht_custom where custom_name = #{custom_name}
+	</select>
+	<!-- 查询所有习俗信息 -->
+	<select id="selectAllCustom" resultType="jessica.website.bean.Custom">
+		select * from ht_custom
+	</select>
+	<!-- 添加一个习俗 -->
+	<insert id="addCustom" parameterType="jessica.website.bean.Custom">
+		insert into ht_custom (custom_name,custom_introduction,custom_pic_path) values(#{custom_name},#{custom_introduction},#{custom_pic_path})
+	</insert>
+	<!-- 修改一个习俗介绍 -->
+	<update id="updateCustom" parameterType="jessica.website.bean.Custom">
+		update ht_custom set custom_introduction = #{custom_introduction} where custom_name = #{custom_name}
+	</update>
+	<!-- 删除一个习俗 -->
+	<delete id="deleteCustom" parameterType="String">
+		delete from ht_custom where custom_name = #{custom_name}
+	</delete>
+</mapper>

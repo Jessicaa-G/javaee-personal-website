@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jessica.website.dao.AwardDao">
+	<!-- 查询一个荣誉 -->
+	<select id="selectAwardByName" parameterType="String" resultType="jessica.website.bean.Award">
+		select * from self_award where award_name = #{award_name}
+	</select>
+	<!-- 查询所有荣誉 -->
+	<select id="selectAllAward" resultType="jessica.website.bean.Award">
+		select * from self_award
+	</select>
+	<!-- 添加一个荣誉 -->
+	<insert id="addAward" parameterType="jessica.website.bean.Award">
+		insert into self_award (award_name,award_title,award_year) values(#{award_name},#{award_title},#{award_year})
+	</insert>
+	<!-- 修改一个荣誉 -->
+	<update id="updateAward" parameterType="jessica.website.bean.Award">
+		update self_award set award_name = #{award_name},award_title = #{award_title},award_year=#{award_year} where award_name = #{award_name}
+	</update>
+	<!-- 删除一个荣誉 -->
+	<delete id="deleteAward" parameterType="String">
+		delete from self_award where award_name = #{award_name}
+	</delete>
+</mapper>
