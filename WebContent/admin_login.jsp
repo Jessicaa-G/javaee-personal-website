@@ -50,7 +50,7 @@
 		$("#loginbtn").click(function(){
 			let psw = $("#psw").val();
 			let msg = $("#msg");
-			if(psw=="jessica325"){
+			if(psw=="123456"){
 				window.location="admin/home";
 			}
 			else{
