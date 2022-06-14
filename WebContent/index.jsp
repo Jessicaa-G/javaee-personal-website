@@ -64,7 +64,7 @@
 					<header>
 						<h1 class="subtitle">Hey there! I'm</h1>
 						<h2 class="title" style="font-family: 'Kaushan Script', sans-serif;">Jessica</h2>
-						<h1 class="profession">A college student from bjfu</h1>
+						<h1 class="profession">A student</h1>
 						<!-- <p>A free responsive web site template by <a href="https://templated.co">TEMPLATED</a></p>
     					<h2>Hielo</h2> -->
 					</header>
