@@ -31,25 +31,3 @@ jsp/servlet/MyBatis
 ## Database Design
 <img width="555" alt="db1" src="https://user-images.githubusercontent.com/67884721/129516572-8042779e-6442-401d-9096-d790e7523275.JPG">
 <img width="555" alt="db2" src="https://user-images.githubusercontent.com/67884721/129516590-5b9b524d-9a71-4ac6-b3d7-7f5f87cdf199.JPG">
-
-## Demo
-首页<br>
-<!-- <img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517658-c98446e4-c9e8-4592-b07a-94113909f756.jpg"> -->
-
-自我介绍<br>
-<!-- <img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517796-b7a79dbb-9adb-480b-abb7-447ea62f1905.jpg"> -->
-
-家乡介绍<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517945-1345ec90-ad66-4093-8b32-4e89a74f698c.jpg">
-
-后台管理-首页<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129518107-b35e8392-b712-4272-8be9-ff4da571a132.jpg">
-
-后台管理-美食信息管理<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129518220-5e91aa7d-2fba-432e-a92e-1b3b5e73ac6e.jpg">
-
-后台管理-留言信息管理/留言回复<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129518224-388937fc-9c6e-4112-a373-14974b576b1d.jpg">
-
-
-
