@@ -34,10 +34,10 @@ jsp/servlet/MyBatis
 
 ## Demo
 首页<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517658-c98446e4-c9e8-4592-b07a-94113909f756.jpg">
+<!-- <img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517658-c98446e4-c9e8-4592-b07a-94113909f756.jpg"> -->
 
 自我介绍<br>
-<img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517796-b7a79dbb-9adb-480b-abb7-447ea62f1905.jpg">
+<!-- <img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517796-b7a79dbb-9adb-480b-abb7-447ea62f1905.jpg"> -->
 
 家乡介绍<br>
 <img width="555" alt="demo1" src="https://user-images.githubusercontent.com/67884721/129517945-1345ec90-ad66-4093-8b32-4e89a74f698c.jpg">
