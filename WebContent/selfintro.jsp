@@ -118,21 +118,21 @@
 							<div style="flex:1;border-right: 1px solid #BC8F8F;">
 								<h3 style="text-align:center">个人信息</h3>
 								<h4 style="margin-left: 70px"> 
-									姓名：关絜匀	
-									<br>性别：女			
-									<br>生日：2000-3-25
-									<br>学历：本科
-									<br>就读学校：北京林业大学
-									<br>专业：计算机科学与技术（创新实验班）
+									姓名：xxx	
+									<br>性别：x			
+									<br>生日：xxxx-xx-xx
+									<br>学历：xxx
+									<br>就读学校：xxxx
+									<br>专业：xxxx
 								</h4>
 								
 							</div>
 							<div style="flex:1;border-left: 1px solid #BC8F8F; ">
 								<h3 style="text-align:center">联系方式</h3>
 								<h4 style="margin-left: 70px;line-height: 3"> 
-									手机：1305176xxxx	
-									<br>邮箱：yinxi325@sina.com			
-									<br>地址：北京 海淀
+									手机：xxxx	
+									<br>邮箱：xxxx			
+									<br>地址：xxxx
 								</h4>
 							</div>
 						</div>
