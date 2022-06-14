@@ -206,10 +206,10 @@
 		<footer id="footer" style="background-color: transparent;">
 			<div class="container">
 				<ul class="icons">
-					<li><a href="https://github.com/Jessicaa-G" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.facebook.com/jieyun.guan" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com/g.jessica325/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="mailto:yinxi325@sina.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#"><span class="label">Facebook</span></a></li>
+					<li><a href="#"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
 			</div>
 			<div class="copyright">
